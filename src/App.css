@@ -1,0 +1,20 @@
+.todo-list li {
+    color: grey;
+}
+
+.unfinished-tasks {
+    color: red;
+}
+
+.buttons {
+    border-radius: 7px;
+    border: black solid 1px;
+    margin: 1px;
+    background-color: rgb(221, 221, 221);
+}
+
+.new-task {
+    border-radius: 7px;
+    border: black solid 1px;
+    margin: 1px;
+}
