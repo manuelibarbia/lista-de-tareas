@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import './App.css'
 
-// import { CompletedTasks } from './components/CompletedTasks';
+import { UncompletedTasks } from './components/UncompletedTasks';
 import { TodoList } from './components/TodoList';
 
 const KEY = 'todoApp.todos'
@@ -54,8 +54,7 @@ export function App() {
         <input ref={todoTaskRef} type='text' placeholder='Nueva tarea' className='new-task' />
         <button onClick={handlerTodoAdd} className='buttons'>Añadir</button>
         <button onClick={handlerClearAll} className='buttons'>Eliminar</button>
-        <div className='unfinished-tasks' >Tareas por terminar: {todos.filter((todo) => !todo.completed).length}</div>
-        {/* <CompletedTasks todos={todos} /> */}
+        <UncompletedTasks todos={todos} />
     </>
     );
 }
